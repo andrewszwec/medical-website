@@ -5,17 +5,17 @@
 <body>
 
 <h1>The Cognitive Co</h1>
-
+<h2>LOCALHOST</h2>
 <p>This is a page to demonstrate the API enpoints created for the medical project.</p>
 
-<form class="FileUploadForm" action="http://atomiccx.co/api/medical/ocr" method=post enctype=multipart/form-data>
+<form class="FileUploadForm" action="http://localhost:5000/api/medical/ocr" method=post enctype=multipart/form-data>
     <p><strong>Upload Image:</strong></p>
       <input type=file name=image> <br><br>
       <input type=submit value=Upload>
   </form>
   <br>
   <br>
-  <form class="NewStickerTemplate" action="http://atomiccx.co/api/medical/newsticker" method=post enctype=multipart/form-data>
+  <form class="NewStickerTemplate" action="http://localhost:5000/api/medical/newsticker" method=post enctype=multipart/form-data>
     <p><strong>Sticker Template: </strong> </p>
       <p>Template Name:  <input type="text" name=template_name value="e.g. rnsh"> <br><br>
       <p>Choose JSON File <input type="file" name=region_json>  <br><br>
@@ -23,7 +23,7 @@
   </form>
   <br>
   <br>
-  <form class="UpdateStickerTemplate" action="http://atomiccx.co/api/medical/updatesticker" method=post enctype=multipart/form-data>
+  <form class="UpdateStickerTemplate" action="http://localhost:5000/api/medical/updatesticker" method=post enctype=multipart/form-data>
     <p><strong>Update Sticker Template: </strong> </p>
       <p>Template Name to update:  <input type="text" name=template_name value="e.g. rnsh"> <br><br>
       <p>New JSON File <input type="file" name=region_json>  <br><br>
@@ -31,14 +31,14 @@
   </form>
   <br>
   <br>
-  <form class="DeleteStickerTemplate" action="http://atomiccx.co/api/medical/deletesticker" method=post enctype=multipart/form-data>
+  <form class="DeleteStickerTemplate" action="http://localhost:5000/api/medical/deletesticker" method=post enctype=multipart/form-data>
     <p><strong>Delete Sticker Template: </strong> </p>
       <p>Template Name to Delete:  <input type="text" name=template_name value="e.g. rnsh"> <br><br>
       <input type="submit" value=Delete>
   </form>
   <br>
   <br>
-  <form class="SelectStickerTemplate" action="http://atomiccx.co/api/medical/selectsticker" method=post enctype=multipart/form-data>
+  <form class="SelectStickerTemplate" action="http://localhost:5000/api/medical/selectsticker" method=post enctype=multipart/form-data>
     <p><strong>Select Sticker Template: </strong> </p>
       <p>Template Name to Select:  <input type="text" name=template_name value="e.g. rnsh"> <br><br>
       <input type="submit" value=Select>
