@@ -10,7 +10,18 @@
 
 <form class="FileUploadForm" action="http://atomiccx.co/api/medical/ocr" method=post enctype=multipart/form-data>
     <p><strong>Upload Image:</strong></p>
-      <p>Template Name:  <input type="text" name=template_name value="rnsh"> <br><br>
+      <p>Template Name:  <input type="text" name=template_name value="rnsh">
+      <p><strong>Select from templates below:</strong></p>
+      <ul>
+        <li>gos</li>
+        <li>mater1</li>
+        <li>mater2</li>
+        <li>nsp</li>
+        <li>pow1</li>
+        <li>pow2</li>
+        <li>rnsh</li>
+        <li>san</li>
+      </ul>
       <input type=file name=image> <br><br>
       <input type=submit value=Upload>
   </form>
